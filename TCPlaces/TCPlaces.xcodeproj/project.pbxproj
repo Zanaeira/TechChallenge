@@ -25,10 +25,20 @@
 		1BD44E18270722E800A1D2A9 /* TCPlacesAPIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD44E17270722E800A1D2A9 /* TCPlacesAPIEndpoint.swift */; };
 		1BD44E1A2707239100A1D2A9 /* TCPlacesAPIRequestBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD44E192707239100A1D2A9 /* TCPlacesAPIRequestBuilderTests.swift */; };
 		1BD44E1C270723BC00A1D2A9 /* TCPlacesAPIURLRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD44E1B270723BC00A1D2A9 /* TCPlacesAPIURLRequestBuilder.swift */; };
+		1BD44E2C27072E7B00A1D2A9 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD44E2B27072E7B00A1D2A9 /* URLSessionHTTPClient.swift */; };
+		1BD44E432707306500A1D2A9 /* TCPlaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BD44D6E27071CD500A1D2A9 /* TCPlaces.framework */; platformFilter = ios; };
+		1BD44E4A2707306F00A1D2A9 /* TCPlacesAPIEndToEndTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD44E492707306F00A1D2A9 /* TCPlacesAPIEndToEndTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		1BD44D7A27071CD600A1D2A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BD44D6527071CD500A1D2A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BD44D6D27071CD500A1D2A9;
+			remoteInfo = TCPlaces;
+		};
+		1BD44E442707306500A1D2A9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1BD44D6527071CD500A1D2A9 /* Project object */;
 			proxyType = 1;
@@ -57,6 +67,9 @@
 		1BD44E17270722E800A1D2A9 /* TCPlacesAPIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCPlacesAPIEndpoint.swift; sourceTree = "<group>"; };
 		1BD44E192707239100A1D2A9 /* TCPlacesAPIRequestBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCPlacesAPIRequestBuilderTests.swift; sourceTree = "<group>"; };
 		1BD44E1B270723BC00A1D2A9 /* TCPlacesAPIURLRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCPlacesAPIURLRequestBuilder.swift; sourceTree = "<group>"; };
+		1BD44E2B27072E7B00A1D2A9 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
+		1BD44E3F2707306500A1D2A9 /* TCPlacesAPIEndToEndTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCPlacesAPIEndToEndTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BD44E492707306F00A1D2A9 /* TCPlacesAPIEndToEndTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCPlacesAPIEndToEndTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +88,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1BD44E3C2707306500A1D2A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BD44E432707306500A1D2A9 /* TCPlaces.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -83,6 +104,7 @@
 			children = (
 				1BD44D7027071CD500A1D2A9 /* TCPlaces */,
 				1BD44D7C27071CD600A1D2A9 /* TCPlacesTests */,
+				1BD44E402707306500A1D2A9 /* TCPlacesAPIEndToEndTests */,
 				1BD44D6F27071CD500A1D2A9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +114,7 @@
 			children = (
 				1BD44D6E27071CD500A1D2A9 /* TCPlaces.framework */,
 				1BD44D7827071CD600A1D2A9 /* TCPlacesTests.xctest */,
+				1BD44E3F2707306500A1D2A9 /* TCPlacesAPIEndToEndTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,6 +166,7 @@
 				1BD44E102707223600A1D2A9 /* RemotePlaceUploader.swift */,
 				1BD44E052707202800A1D2A9 /* NetworkError.swift */,
 				1BD44E032707200900A1D2A9 /* HTTPClient.swift */,
+				1BD44E2B27072E7B00A1D2A9 /* URLSessionHTTPClient.swift */,
 			);
 			path = Loading;
 			sourceTree = "<group>";
@@ -165,6 +189,14 @@
 				1BD44E1B270723BC00A1D2A9 /* TCPlacesAPIURLRequestBuilder.swift */,
 			);
 			path = "Endpoint & URLRequest";
+			sourceTree = "<group>";
+		};
+		1BD44E402707306500A1D2A9 /* TCPlacesAPIEndToEndTests */ = {
+			isa = PBXGroup;
+			children = (
+				1BD44E492707306F00A1D2A9 /* TCPlacesAPIEndToEndTests.swift */,
+			);
+			path = TCPlacesAPIEndToEndTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +248,24 @@
 			productReference = 1BD44D7827071CD600A1D2A9 /* TCPlacesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		1BD44E3E2707306500A1D2A9 /* TCPlacesAPIEndToEndTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BD44E462707306500A1D2A9 /* Build configuration list for PBXNativeTarget "TCPlacesAPIEndToEndTests" */;
+			buildPhases = (
+				1BD44E3B2707306500A1D2A9 /* Sources */,
+				1BD44E3C2707306500A1D2A9 /* Frameworks */,
+				1BD44E3D2707306500A1D2A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1BD44E452707306500A1D2A9 /* PBXTargetDependency */,
+			);
+			name = TCPlacesAPIEndToEndTests;
+			productName = TCPlacesAPIEndToEndTests;
+			productReference = 1BD44E3F2707306500A1D2A9 /* TCPlacesAPIEndToEndTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -234,6 +284,9 @@
 						CreatedOnToolsVersion = 13.0;
 						LastSwiftMigration = 1300;
 					};
+					1BD44E3E2707306500A1D2A9 = {
+						CreatedOnToolsVersion = 13.0;
+					};
 				};
 			};
 			buildConfigurationList = 1BD44D6827071CD500A1D2A9 /* Build configuration list for PBXProject "TCPlaces" */;
@@ -251,6 +304,7 @@
 			targets = (
 				1BD44D6D27071CD500A1D2A9 /* TCPlaces */,
 				1BD44D7727071CD600A1D2A9 /* TCPlacesTests */,
+				1BD44E3E2707306500A1D2A9 /* TCPlacesAPIEndToEndTests */,
 			);
 		};
 /* End PBXProject section */
@@ -264,6 +318,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1BD44D7627071CD600A1D2A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BD44E3D2707306500A1D2A9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -284,6 +345,7 @@
 				1BD44E042707200900A1D2A9 /* HTTPClient.swift in Sources */,
 				1BD44DFE27071F9C00A1D2A9 /* PlaceUploader.swift in Sources */,
 				1BD44E062707202800A1D2A9 /* NetworkError.swift in Sources */,
+				1BD44E2C27072E7B00A1D2A9 /* URLSessionHTTPClient.swift in Sources */,
 				1BD44E112707223600A1D2A9 /* RemotePlaceUploader.swift in Sources */,
 				1BD44E0D2707209100A1D2A9 /* DateFormatter+Extension.swift in Sources */,
 				1BD44E0B2707206600A1D2A9 /* RemotePlace.swift in Sources */,
@@ -304,6 +366,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1BD44E3B2707306500A1D2A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BD44E4A2707306F00A1D2A9 /* TCPlacesAPIEndToEndTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -311,6 +381,12 @@
 			isa = PBXTargetDependency;
 			target = 1BD44D6D27071CD500A1D2A9 /* TCPlaces */;
 			targetProxy = 1BD44D7A27071CD600A1D2A9 /* PBXContainerItemProxy */;
+		};
+		1BD44E452707306500A1D2A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = 1BD44D6D27071CD500A1D2A9 /* TCPlaces */;
+			targetProxy = 1BD44E442707306500A1D2A9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -546,6 +622,50 @@
 			};
 			name = Release;
 		};
+		1BD44E472707306500A1D2A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HHWJTGZ862;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Zanaeira.TCPlacesAPIEndToEndTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1BD44E482707306500A1D2A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HHWJTGZ862;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Zanaeira.TCPlacesAPIEndToEndTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -572,6 +692,15 @@
 			buildConfigurations = (
 				1BD44D8627071CD600A1D2A9 /* Debug */,
 				1BD44D8727071CD600A1D2A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BD44E462707306500A1D2A9 /* Build configuration list for PBXNativeTarget "TCPlacesAPIEndToEndTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BD44E472707306500A1D2A9 /* Debug */,
+				1BD44E482707306500A1D2A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
