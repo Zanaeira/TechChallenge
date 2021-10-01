@@ -52,7 +52,7 @@ class PlaceInformationFieldsViewController: UIViewController {
     
     func updateData() {
         let fieldData = getFieldData()
-        let request = AirslipPlacesAPIURLRequestBuilder.createDemographicsURLRequest(place: fieldData.place, population: fieldData.population, currency: fieldData.currency, date: fieldData.date)
+        let request = TCPlacesAPIURLRequestBuilder.createDemographicsURLRequest(place: fieldData.place, population: fieldData.population, currency: fieldData.currency, date: fieldData.date)
         uploader = RemotePlaceUploader(urlRequest: request, client: client)
         
         uploader?.upload { [weak self] result in

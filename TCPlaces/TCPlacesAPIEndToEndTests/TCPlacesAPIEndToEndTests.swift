@@ -34,7 +34,7 @@ class TCPlacesAPIEndToEndTests: XCTestCase {
         }
     }
     
-    func test_endToEndAirslipPlacesPOSTcreateDemographics_matchesFixedTestData() {
+    func test_endToEndTCPlacesPOSTcreateDemographics_matchesFixedTestData() {
         let urlRequest = TCPlacesAPIURLRequestBuilder.createDemographicsURLRequest(place: "Bangladesh", population: 166675572, currency: "BDT", date: Date())
         let client = URLSessionHTTPClient()
         let uploader = RemotePlaceUploader(urlRequest: urlRequest, client: client)
