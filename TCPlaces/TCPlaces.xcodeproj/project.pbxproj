@@ -18,6 +18,8 @@
 		1BD44E082707204100A1D2A9 /* PlaceMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD44E072707204100A1D2A9 /* PlaceMapper.swift */; };
 		1BD44E0B2707206600A1D2A9 /* RemotePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD44E0A2707206600A1D2A9 /* RemotePlace.swift */; };
 		1BD44E0D2707209100A1D2A9 /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD44E0C2707209100A1D2A9 /* DateFormatter+Extension.swift */; };
+		1BD44E0F2707221500A1D2A9 /* RemotePlaceUploaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD44E0E2707221500A1D2A9 /* RemotePlaceUploaderTests.swift */; };
+		1BD44E112707223600A1D2A9 /* RemotePlaceUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD44E102707223600A1D2A9 /* RemotePlaceUploader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,8 @@
 		1BD44E072707204100A1D2A9 /* PlaceMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceMapper.swift; sourceTree = "<group>"; };
 		1BD44E0A2707206600A1D2A9 /* RemotePlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemotePlace.swift; sourceTree = "<group>"; };
 		1BD44E0C2707209100A1D2A9 /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
+		1BD44E0E2707221500A1D2A9 /* RemotePlaceUploaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemotePlaceUploaderTests.swift; sourceTree = "<group>"; };
+		1BD44E102707223600A1D2A9 /* RemotePlaceUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemotePlaceUploader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				1BD44DF627071F5100A1D2A9 /* RemotePlaceLoaderTests.swift */,
+				1BD44E0E2707221500A1D2A9 /* RemotePlaceUploaderTests.swift */,
 			);
 			path = TCPlacesTests;
 			sourceTree = "<group>";
@@ -122,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				1BD44DFF27071FCF00A1D2A9 /* RemotePlaceLoader.swift */,
+				1BD44E102707223600A1D2A9 /* RemotePlaceUploader.swift */,
 				1BD44E052707202800A1D2A9 /* NetworkError.swift */,
 				1BD44E032707200900A1D2A9 /* HTTPClient.swift */,
 			);
@@ -253,6 +259,7 @@
 				1BD44E042707200900A1D2A9 /* HTTPClient.swift in Sources */,
 				1BD44DFE27071F9C00A1D2A9 /* PlaceUploader.swift in Sources */,
 				1BD44E062707202800A1D2A9 /* NetworkError.swift in Sources */,
+				1BD44E112707223600A1D2A9 /* RemotePlaceUploader.swift in Sources */,
 				1BD44E0D2707209100A1D2A9 /* DateFormatter+Extension.swift in Sources */,
 				1BD44E0B2707206600A1D2A9 /* RemotePlace.swift in Sources */,
 				1BD44E0027071FCF00A1D2A9 /* RemotePlaceLoader.swift in Sources */,
@@ -265,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BD44DF727071F5100A1D2A9 /* RemotePlaceLoaderTests.swift in Sources */,
+				1BD44E0F2707221500A1D2A9 /* RemotePlaceUploaderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
