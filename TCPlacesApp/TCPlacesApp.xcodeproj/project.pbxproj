@@ -7,13 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B1355442707377C001C4CCB /* TCPlaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B1355422707377C001C4CCB /* TCPlaces.framework */; };
+		1B1355452707377C001C4CCB /* TCPlaces.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1B1355422707377C001C4CCB /* TCPlaces.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1B1355462707377C001C4CCB /* TCPlacesiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B1355432707377C001C4CCB /* TCPlacesiOS.framework */; };
+		1B1355472707377C001C4CCB /* TCPlacesiOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1B1355432707377C001C4CCB /* TCPlacesiOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1B88807D270735CA002569B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B88807C270735CA002569B9 /* AppDelegate.swift */; };
 		1B88807F270735CA002569B9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B88807E270735CA002569B9 /* SceneDelegate.swift */; };
 		1B888086270735CB002569B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B888085270735CB002569B9 /* Assets.xcassets */; };
 		1B888089270735CB002569B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B888087270735CB002569B9 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1B1355482707377C001C4CCB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1B1355452707377C001C4CCB /* TCPlaces.framework in Embed Frameworks */,
+				1B1355472707377C001C4CCB /* TCPlacesiOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1B1355422707377C001C4CCB /* TCPlaces.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TCPlaces.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B1355432707377C001C4CCB /* TCPlacesiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TCPlacesiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B888079270735CA002569B9 /* TCPlacesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCPlacesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B88807C270735CA002569B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B88807E270735CA002569B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,17 +48,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B1355442707377C001C4CCB /* TCPlaces.framework in Frameworks */,
+				1B1355462707377C001C4CCB /* TCPlacesiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B1355412707377C001C4CCB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B1355422707377C001C4CCB /* TCPlaces.framework */,
+				1B1355432707377C001C4CCB /* TCPlacesiOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1B888070270735CA002569B9 = {
 			isa = PBXGroup;
 			children = (
 				1B88807B270735CA002569B9 /* TCPlacesApp */,
 				1B88807A270735CA002569B9 /* Products */,
+				1B1355412707377C001C4CCB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +104,7 @@
 				1B888075270735CA002569B9 /* Sources */,
 				1B888076270735CA002569B9 /* Frameworks */,
 				1B888077270735CA002569B9 /* Resources */,
+				1B1355482707377C001C4CCB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -201,7 +235,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -256,7 +290,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
