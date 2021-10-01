@@ -23,6 +23,8 @@
 		1BD44E13270722A600A1D2A9 /* TCPlacesAPIEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD44E12270722A600A1D2A9 /* TCPlacesAPIEndpointTests.swift */; };
 		1BD44E15270722CE00A1D2A9 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD44E14270722CE00A1D2A9 /* Endpoint.swift */; };
 		1BD44E18270722E800A1D2A9 /* TCPlacesAPIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD44E17270722E800A1D2A9 /* TCPlacesAPIEndpoint.swift */; };
+		1BD44E1A2707239100A1D2A9 /* TCPlacesAPIRequestBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD44E192707239100A1D2A9 /* TCPlacesAPIRequestBuilderTests.swift */; };
+		1BD44E1C270723BC00A1D2A9 /* TCPlacesAPIURLRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD44E1B270723BC00A1D2A9 /* TCPlacesAPIURLRequestBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		1BD44E12270722A600A1D2A9 /* TCPlacesAPIEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCPlacesAPIEndpointTests.swift; sourceTree = "<group>"; };
 		1BD44E14270722CE00A1D2A9 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		1BD44E17270722E800A1D2A9 /* TCPlacesAPIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCPlacesAPIEndpoint.swift; sourceTree = "<group>"; };
+		1BD44E192707239100A1D2A9 /* TCPlacesAPIRequestBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCPlacesAPIRequestBuilderTests.swift; sourceTree = "<group>"; };
+		1BD44E1B270723BC00A1D2A9 /* TCPlacesAPIURLRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCPlacesAPIURLRequestBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 				1BD44DF627071F5100A1D2A9 /* RemotePlaceLoaderTests.swift */,
 				1BD44E0E2707221500A1D2A9 /* RemotePlaceUploaderTests.swift */,
 				1BD44E12270722A600A1D2A9 /* TCPlacesAPIEndpointTests.swift */,
+				1BD44E192707239100A1D2A9 /* TCPlacesAPIRequestBuilderTests.swift */,
 			);
 			path = TCPlacesTests;
 			sourceTree = "<group>";
@@ -157,6 +162,7 @@
 			children = (
 				1BD44E14270722CE00A1D2A9 /* Endpoint.swift */,
 				1BD44E17270722E800A1D2A9 /* TCPlacesAPIEndpoint.swift */,
+				1BD44E1B270723BC00A1D2A9 /* TCPlacesAPIURLRequestBuilder.swift */,
 			);
 			path = "Endpoint & URLRequest";
 			sourceTree = "<group>";
@@ -274,6 +280,7 @@
 				1BD44E082707204100A1D2A9 /* PlaceMapper.swift in Sources */,
 				1BD44DFC27071F8E00A1D2A9 /* PlaceLoader.swift in Sources */,
 				1BD44E18270722E800A1D2A9 /* TCPlacesAPIEndpoint.swift in Sources */,
+				1BD44E1C270723BC00A1D2A9 /* TCPlacesAPIURLRequestBuilder.swift in Sources */,
 				1BD44E042707200900A1D2A9 /* HTTPClient.swift in Sources */,
 				1BD44DFE27071F9C00A1D2A9 /* PlaceUploader.swift in Sources */,
 				1BD44E062707202800A1D2A9 /* NetworkError.swift in Sources */,
@@ -293,6 +300,7 @@
 				1BD44DF727071F5100A1D2A9 /* RemotePlaceLoaderTests.swift in Sources */,
 				1BD44E0F2707221500A1D2A9 /* RemotePlaceUploaderTests.swift in Sources */,
 				1BD44E13270722A600A1D2A9 /* TCPlacesAPIEndpointTests.swift in Sources */,
+				1BD44E1A2707239100A1D2A9 /* TCPlacesAPIRequestBuilderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
