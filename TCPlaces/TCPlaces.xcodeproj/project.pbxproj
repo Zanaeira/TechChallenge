@@ -20,6 +20,9 @@
 		1BD44E0D2707209100A1D2A9 /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD44E0C2707209100A1D2A9 /* DateFormatter+Extension.swift */; };
 		1BD44E0F2707221500A1D2A9 /* RemotePlaceUploaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD44E0E2707221500A1D2A9 /* RemotePlaceUploaderTests.swift */; };
 		1BD44E112707223600A1D2A9 /* RemotePlaceUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD44E102707223600A1D2A9 /* RemotePlaceUploader.swift */; };
+		1BD44E13270722A600A1D2A9 /* TCPlacesAPIEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD44E12270722A600A1D2A9 /* TCPlacesAPIEndpointTests.swift */; };
+		1BD44E15270722CE00A1D2A9 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD44E14270722CE00A1D2A9 /* Endpoint.swift */; };
+		1BD44E18270722E800A1D2A9 /* TCPlacesAPIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD44E17270722E800A1D2A9 /* TCPlacesAPIEndpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		1BD44E0C2707209100A1D2A9 /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
 		1BD44E0E2707221500A1D2A9 /* RemotePlaceUploaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemotePlaceUploaderTests.swift; sourceTree = "<group>"; };
 		1BD44E102707223600A1D2A9 /* RemotePlaceUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemotePlaceUploader.swift; sourceTree = "<group>"; };
+		1BD44E12270722A600A1D2A9 /* TCPlacesAPIEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCPlacesAPIEndpointTests.swift; sourceTree = "<group>"; };
+		1BD44E14270722CE00A1D2A9 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		1BD44E17270722E800A1D2A9 /* TCPlacesAPIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCPlacesAPIEndpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,7 @@
 			children = (
 				1BD44DF627071F5100A1D2A9 /* RemotePlaceLoaderTests.swift */,
 				1BD44E0E2707221500A1D2A9 /* RemotePlaceUploaderTests.swift */,
+				1BD44E12270722A600A1D2A9 /* TCPlacesAPIEndpointTests.swift */,
 			);
 			path = TCPlacesTests;
 			sourceTree = "<group>";
@@ -117,6 +124,7 @@
 		1BD44E0127071FD300A1D2A9 /* TC Places API */ = {
 			isa = PBXGroup;
 			children = (
+				1BD44E16270722D300A1D2A9 /* Endpoint & URLRequest */,
 				1BD44E0227071FE100A1D2A9 /* Loading */,
 				1BD44E092707204B00A1D2A9 /* API Mapping */,
 			);
@@ -142,6 +150,15 @@
 				1BD44E0C2707209100A1D2A9 /* DateFormatter+Extension.swift */,
 			);
 			path = "API Mapping";
+			sourceTree = "<group>";
+		};
+		1BD44E16270722D300A1D2A9 /* Endpoint & URLRequest */ = {
+			isa = PBXGroup;
+			children = (
+				1BD44E14270722CE00A1D2A9 /* Endpoint.swift */,
+				1BD44E17270722E800A1D2A9 /* TCPlacesAPIEndpoint.swift */,
+			);
+			path = "Endpoint & URLRequest";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +273,7 @@
 			files = (
 				1BD44E082707204100A1D2A9 /* PlaceMapper.swift in Sources */,
 				1BD44DFC27071F8E00A1D2A9 /* PlaceLoader.swift in Sources */,
+				1BD44E18270722E800A1D2A9 /* TCPlacesAPIEndpoint.swift in Sources */,
 				1BD44E042707200900A1D2A9 /* HTTPClient.swift in Sources */,
 				1BD44DFE27071F9C00A1D2A9 /* PlaceUploader.swift in Sources */,
 				1BD44E062707202800A1D2A9 /* NetworkError.swift in Sources */,
@@ -263,6 +281,7 @@
 				1BD44E0D2707209100A1D2A9 /* DateFormatter+Extension.swift in Sources */,
 				1BD44E0B2707206600A1D2A9 /* RemotePlace.swift in Sources */,
 				1BD44E0027071FCF00A1D2A9 /* RemotePlaceLoader.swift in Sources */,
+				1BD44E15270722CE00A1D2A9 /* Endpoint.swift in Sources */,
 				1BD44DF927071F6200A1D2A9 /* Place.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +292,7 @@
 			files = (
 				1BD44DF727071F5100A1D2A9 /* RemotePlaceLoaderTests.swift in Sources */,
 				1BD44E0F2707221500A1D2A9 /* RemotePlaceUploaderTests.swift in Sources */,
+				1BD44E13270722A600A1D2A9 /* TCPlacesAPIEndpointTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
