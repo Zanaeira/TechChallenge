@@ -34,6 +34,8 @@ public final class PlacesViewController: UIViewController {
     }
     
     public override func viewDidLoad() {
+        super.viewDidLoad()
+        
         configureUI()
         performInitialDataLoad()
     }
